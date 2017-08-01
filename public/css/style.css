@@ -1,0 +1,354 @@
+body {
+	font: 15px/1.5 Arial, Helvetica,sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+/*Global */
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+h3 {
+	font-family: cursive;
+	font-size: 23px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+.button_1 {
+	height: 38px;
+	background: #4080ff;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+/*header */
+header {
+	background: #4080ff;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #400190 3px solid;
+}
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+header #headtitle {
+	float: left;
+}
+header #headtitle h1 {
+	margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header .highlight {
+	color: #3b5998;
+	font-weight: bold;
+}
+header a:hover {
+	color: #cccccc;
+	font-weight: bold;
+}
+/*showcase*/
+#showcase {
+	min-height: 400px;
+	color: #ffffff;
+}
+#showcase h1 {
+	margin-top: 10%;
+	font-size: 55px;
+	margin-bottom: 10px;
+}
+#showcase p {
+	font-size: 20px;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 400px;
+}
+.text {
+	color: #f2f2f2;
+	font-size: 20px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+.dot {
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #4080ff;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active {
+	background-color: #3b5998;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+@keyframes fade {
+	from { opacity: .4}
+	to {opacity: 1}
+}
+.dark {
+	padding: 15px;
+	background: #35424a;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 5px;
+}
+aside#sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 0px;
+	margin-right: 0;
+	text-align: center;
+}
+article#main-col {
+	float: left;
+	width: 65%;
+}
+ul#services li {
+	list-style: none;
+	padding: 10px;
+	border: #cccccc solid 1px;
+	margin-bottom: 15px;
+	background: #e6e6e6;
+	margin-top: 10px;
+}
+.image {
+	border-radius: 50%;
+}
+#hireme {
+	margin-top: 2px;
+	border: #ffffff solid 1px;
+	padding: 10px;
+	color: #cc181e;
+}
+.facebook {
+	border-radius: 50%;
+	margin-left: 280px;
+	height: 30px;
+	width: 30px;
+}
+.linkedin {
+	border-radius: 50%;
+	margin-left: 10px;
+	height: 30px;
+	width: 30px;
+}
+.twitter {
+	border-radius: 50%;
+	margin-left: 10px;
+	height: 30px;
+	width: 30px;
+}
+.instagram {
+	border-radius: 50%;
+	margin-left: 10px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+#subscribe {
+	padding: 15px;
+	color: #ffffff;
+	background: #3b5998;
+}
+#subscribe h1 {
+	float: left;
+}
+#subscribe form {
+	float: right;
+	margin-top: 15px;
+}
+#subscribe input[type="email"]{
+	padding: 4px;
+	height: 25px;
+	width: 250px;
+}
+#story-showcase {
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 10px;
+	background: #e6e6e6;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px; 
+}
+.photo-profile {
+	position: center;
+}
+.photo {
+	padding: 20px;
+	margin-left: 380px;
+	border-radius: 50%;
+}
+#photo1 {
+	height: 400px;
+	width: 500px;
+	border: solid 3px;
+	box-shadow: 5px 5px 5px #888888;
+}
+#photo2 {
+	height: 400px;
+	width: 500px;
+	border: solid 3px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 5px #888888;
+}
+#photo3 {
+	height: 400px;
+	width: 500px;
+	border: solid 3px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 5px #888888;
+}
+.text3 {
+	text-align: center;
+	font-weight: bold;
+}
+#tula {
+	height: 300px;
+	width: 300px;
+	border: solid 3px;
+	border-radius: 50%;
+	box-shadow: 5px 5px 5px #888888;
+}
+#tulaid {
+	text-align: center;
+}
+#github {
+	text-decoration: none;
+	color: #000;
+	border: solid 2px;
+	padding: 6px;
+	border-radius: 5px;
+}
+#github:hover {
+	background: #0f69ff;
+}
+#myresume {
+	text-decoration: none;
+	color: #000;
+	border: solid 2px;
+	padding: 6px;
+	border-radius: 5px;
+}
+#myresume:hover {
+	background: #0f69ff;
+}
+#my-description-container {
+	list-style: none;
+}
+#aboutme-showcase {
+	padding: 20px;
+	border: #cccccc solid 1px;
+	margin-bottom: 10px;
+	background: #e6e6e6;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#tulaid {
+	list-style: none;
+}
+#photo {
+	list-style: none;
+	text-align: center;
+}
+.val_error {
+	color: #FF1F1F;
+}
+.error_message {
+	color: red;
+	margin-left: 550px;
+	margin-top: 20px;
+}
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #3b5998;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+@media(max-width: 768px){
+	header #headtitle,
+	header nav,
+	header nav li,
+	#subscribe h1,
+	#subscribe form,
+	article#main-col,
+	aside#sidebar {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.facebook {
+		margin-left: 15px;
+	}
+	.image {
+		width: 100%;
+		height: 100%;
+	}
+	#photo1, #photo2, #photo3 {
+		width: 100%;
+		height: 100%;
+	}
+	#tula {
+		height: 100%;
+		width: 100%;
+	}
+	#story-showcase {
+		text-align: center;
+	}
+	.error_message {
+		text-align: center;
+		float: none;
+		margin-left: 20px;
+	}
+	header{
+		padding-bottom: 20px;
+	}
+	#subscribe button, .quote button{
+		display: block;
+		width: 100%;
+	}
+	#subscribe form input[type="email"], .quote input, .quote textarea{
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}

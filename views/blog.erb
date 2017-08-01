@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+	    <title>Teela Subba</title>
+	    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="headtitle">
+                    <h1><span class="highlight">Teela</span>
+                    Personal website</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="blog">Home</a></li>
+                        <li><a href="stories">Stories</a></li>
+                        <li><a href="aboutme">Aboutme</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+  
+        <section id="showcase">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./img/showcase1.jpeg" width="100%" height="400px">
+                    <div class="text">Welcome To My Page</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./img/teela2.jpeg" width="100%" height="400px">
+                    <div class="text">I love to Travel</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="./img/tech.jpeg" width="100%" height="400px">
+                    <div class="text">Start Learning Code</div>
+                </div>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <div class="container">
+            <h1>Subscribe Me</h1>
+            <form action ="/myblog" method ="post" onsubmit="return Validate()" name="vform">
+                <input type="email" name="email" class="textInput" placeholder="Enter Email...">
+                <button type="submit" class="button_1" value="Subscribe">Subscribe</button>              
+                <div id="email_error" class="val_error"></div>
+            </form>
+             <div class="error_message"><%= message %></div>
+            </div>
+        </section>
+
+        <section id="main">
+            <div class="container">
+                <article id="main-col">
+                    <ul id="services">
+                        <li>
+                            <h3>My Journey to coding...</h3>
+                            <p>I grown up in a highly lacking Technology Country. We have only interest and goals to be a software developer or designer but not enough resources and materials. So I choose a path to take major in physics and I did well too. I have no regret to my choice. As a boy grownup in a small refugee camps in Nepal. I got an opportunity to flew to the land of opportunity called United States of America. After short period of time, I got chance to participate in a software developer program called Techhire funded by government. It was only a 16 weeks class though It teaches me a lot. Now, I know about coding and how it works. This webpage is just a example that I created. Ruby, HTML, CSS, JavaScript, Bootstrap are familler programming languages to me. 
+                            The world is now the period of science and technology.It makes life much easier and informative then before. Artificial Intelligence(AI) is the hot cake for technologist. Automation and robotics are another interesting and challenging path. For those who want to start journey to be a coder, I highly recommended.</p>
+				        </li>
+				        <li>
+				            <a href="https://www.facebook.com/tularam.subba"><img class="facebook" src="./img/facebook.png"></a>
+				            <a href="https://www.linkedin.com/in/teela-subba-73a37213b/"><img class="linkedin" src="./img/linkedin.png"></a>
+				            <a href="https://twitter.com/tularamsubba"><img class="twitter" src="./img/twitter.png"></a>
+				            <a href="https://www.instagram.com/tularamsubba/"><img class="instagram" src="./img/instagram.PNG"></a>
+				        </li>
+                    </ul>
+				</article>
+
+                <aside id="sidebar">
+                    <div class="dark">
+                        <h1 id="hireme">Hire Me</h1>
+                        <img class="image" src="./img/tula.JPG" width="300px" height="300px">
+                        <p>Teela Ram Subba</p>
+                        <h1>Software Developer</h1>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+            if (slideIndex> slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000);
+        }
+
+        var email = document.forms["vform"]["email"];
+        var email_error = document.getElementById("email_error");
+        email.addEventListener("blur", emailVerify, true);
+
+        function Validate(){
+            if(email.value == ""){
+                email_error.textContent = "Email is required!";
+                email.style.border = "1px solid red";
+                email.focus();
+                return false;
+            }
+        }
+
+        function emailVerify(){
+            if (email.value != "") {
+                email_error.innerHTML = "";
+                email.style.border = "1px solid #110E0F";
+                return true;
+            }
+        }
+
+    </script>
+        <footer>
+            <p>Design By Teela Ram Subba, Copyright &copy; 2017</p>
+        </footer>
+    </body>
+</html>
