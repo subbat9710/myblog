@@ -1,1 +1,1 @@
-exec rackup config.ru -p 45737
+web: bundle exec ruby app.rb
