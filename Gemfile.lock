@@ -18,7 +18,7 @@ PLATFORMS
 
 DEPENDENCIES
   pg
-  sinatra
+  sinatra (~> 2.0.0)
 
 RUBY VERSION
    ruby 2.4.1p111
