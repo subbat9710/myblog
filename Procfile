@@ -1,1 +1,1 @@
-bundle exec rackup config.ru -p 45737
+exec rackup config.ru -p 45737
