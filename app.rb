@@ -12,8 +12,10 @@ load './local_env.rb' if File.exist?('./local_env.rb')
 
     db = PG::Connection.new(db_params)
 
+    message = "Connected"
+
     get '/' do 
-	    erb :blog, :locals => {:message => ""}
+	    erb :blog, :locals => {:message => message}
     end
 
     post '/myblog' do 
@@ -38,7 +40,7 @@ load './local_env.rb' if File.exist?('./local_env.rb')
     end
 
     get '/blog' do 
-	    erb :blog, :locals => {:message => ""}
+	    erb :blog
     end
 
     get '/aboutme' do 
