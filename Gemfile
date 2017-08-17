@@ -3,4 +3,6 @@ ruby '2.4.1'
 
 gem 'sinatra'
 
-gem 'pg'
+group :production do 
+    gem 'pg'
+end
