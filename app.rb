@@ -40,7 +40,7 @@ load './local_env.rb' if File.exist?('./local_env.rb')
     end
 
     get '/blog' do 
-	    erb :blog
+	    erb :blog, :locals => {:message => ""}
     end
 
     get '/aboutme' do 
