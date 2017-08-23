@@ -1,4 +1,4 @@
-require 'sinatra'
+require 'sinatra' 
 require 'pg'
 load './local_env.rb' if File.exist?('./local_env.rb')
 
@@ -12,10 +12,8 @@ load './local_env.rb' if File.exist?('./local_env.rb')
 
     db = PG::Connection.new(db_params)
 
-    message = "Connected"
-
     get '/' do 
-	    erb :blog, :locals => {:message => message}
+	    erb :blog, :locals => {:message => ""}
     end
 
     post '/myblog' do 
