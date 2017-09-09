@@ -1,6 +1,6 @@
 # myblog
 <p>Creating a website specially focusing for frontend.</p>
-<h1>Languages Used</h1>
+<h2>Languages Used</h2>
 <li>Ruby</li>
 <li>HTML5</li>
 <li>CSS3</li>
